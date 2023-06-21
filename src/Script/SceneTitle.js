@@ -7,6 +7,10 @@ function displayTitle() {
 
     fillTextArray('Desserterria', UITitle.titleText);
     
+    drawImageArray(img.buttonBar, UITitle.startRect);
+    drawImageArray(img.buttonBar, UITitle.editorRect);
+    drawImageArray(img.buttonBar, UITitle.eraseRect);
+    
     fillTextArray('Start', UITitle.startText);
     fillTextArray('Editor', UITitle.editorText);
     fillTextArray('Erase', UITitle.eraseText);

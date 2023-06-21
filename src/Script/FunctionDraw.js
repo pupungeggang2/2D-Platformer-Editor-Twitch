@@ -15,3 +15,7 @@ function strokeRectArray(rect) {
 function fillTextArray(text, position) {
     context.fillText(text, position[0], position[1]);
 }
+
+function drawImageArray(img, position) {
+    context.drawImage(img, position[0], position[1]);
+}

@@ -3,4 +3,5 @@ let img = {
 };
 
 function imageLoad() {
+    img.buttonBar.src = 'Image/ButtonBar.png';
 }

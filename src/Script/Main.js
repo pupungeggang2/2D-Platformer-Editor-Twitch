@@ -14,6 +14,9 @@ function main() {
     gameTime = Date.now();
     gameFrameCurrent = Date.now();
     gameFramePrevious = Date.now() - 16;
+
+    imageLoad();
+
     gameInstance = requestAnimationFrame(loop);
 }
 
