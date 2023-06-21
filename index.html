@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>2D Platformer Editor Twitch</title>
+        <meta charset="UTF-8">
+        <title>Desserterria</title>
+        <style>
+            #Screen {
+                position : absolute;
+                left : 50%;
+                top : 50%;
+                transform : translate(-50%, -50%);
+                border : 2px solid black;
+            }
+            
+            @font-face {
+                font-family : 'neodgm';
+                src : url('Font/neodgm.ttf');
+            }
+        </style>
     </head>
     <body>
         <canvas id="Screen" width="1280" height="720"></canvas>
         <script src="Script/tmi.min.js"></script>
 
         <script src="Script/Asset.js"></script>
+        <script src="Script/UI.js"></script>
         <script src="Script/Data.js"></script>
         <script src="Script/Const.js"></script>
         <script src="Script/Var.js"></script>

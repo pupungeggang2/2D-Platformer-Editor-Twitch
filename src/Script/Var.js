@@ -4,9 +4,12 @@ let gameTime;
 let gameFramePrevious;
 let gameFrameCurrent;
 let gameInstance;
+let delta = 16;
 
 let scene = 'Title';
 let state = '';
+let pause = false;
+let menu = false;
 
 let editor = {
     state : [],
