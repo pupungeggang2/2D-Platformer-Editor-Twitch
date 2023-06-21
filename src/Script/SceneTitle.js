@@ -19,18 +19,28 @@ function displayTitle() {
 function mouseUpTitle(x, y, button) {
     if (button === 0) {
         if (pause === false && menu === false) {
-            if (pointInsideRectArray(x, y, UITitle.startRect)) {
-                scene = 'Save';
-                state = '';
-            } else if (pointInsideRectArray(x, y, UITitle.editorRect)) {
-                scene = 'Editor';
-                state = '';
-            } else if (pointInsideRectArray(x, y, UITitle.eraseRect)) {
-                eraseSaveFile();
+            if (state === '') {
+                if (pointInsideRectArray(x, y, UITitle.startRect)) {
+                    scene = 'Save';
+                    state = '';
+                } else if (pointInsideRectArray(x, y, UITitle.editorRect)) {
+                    scene = 'Editor';
+                    state = '';
+                } else if (pointInsideRectArray(x, y, UITitle.eraseRect)) {
+                    eraseSaveFile();
+                }
             }
         }
     }
 }
 
 function mouseDownTitle(x, y, button) {
+}
+
+function keyUpTitle(key) {
+
+}
+
+function keyDownTitle(key) {
+
 }

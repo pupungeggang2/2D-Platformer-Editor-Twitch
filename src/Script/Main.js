@@ -42,16 +42,41 @@ function loop() {
 
 function keyDown(event) {
     let key = event.key;
+
+    if (scene === 'Title') {
+        keyDownTitle(key);
+    } else if (scene === 'Save') {
+        keyDownSave(key);
+    } else if (scene === 'Field') {
+        keyDownField(key);
+    } else if (scene === 'Editor') {
+        keyDownEditor(key);
+    } else if (scene === 'Test') {
+        keyDownTest(key);
+    }
 }
 
 function keyUp(event) {
     let key = event.key;
+
+    if (scene === 'Title') {
+        keyUpTitle(key);
+    } else if (scene === 'Save') {
+        keyUpSave(key);
+    } else if (scene === 'Field') {
+        keyUpField(key);
+    } else if (scene === 'Editor') {
+        keyUpEditor(key);
+    } else if (scene === 'Test') {
+        keyUpTest(key);
+    }
 }
 
 function mouseDown(event) {
     let canvasRect = canvas.getBoundingClientRect();
     let x = event.clientX - canvasRect.left;
     let y = event.clientY - canvasRect.top;
+    let button = event.button;
     
     if (scene === 'Title') {
         mouseDownTitle(x, y, button);

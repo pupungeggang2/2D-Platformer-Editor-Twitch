@@ -4,6 +4,7 @@ function drawSceneInit() {
     context.strokeStyle = 'Black';
     context.textBaseline = 'top';
     context.textAlign = 'left';
+    context.lineWidth = 2;
     
     context.clearRect(0, 0, 1280, 720);
 }
