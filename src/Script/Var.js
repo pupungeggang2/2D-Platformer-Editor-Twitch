@@ -12,13 +12,26 @@ let pause = false;
 let menu = false;
 
 let editor = {
-    state : [],
+    camera : [0, 0],
+    editHistory : [],
     current : {
-
+        field : [],
+        thing : [],
     },
 };
 
-let twitch = {
+let twitchSetting = {
+    broadcasterNick : '',
+    time : 0,
+    turn : 0,
+    resource : 0,
+    inputMode : '',
+};
+
+let twitchMode = {
+    viewerMode : false,
+    broadcasterNick : '',
+    joinedList : [],
     editorNick : '',
     editorChat : '',
     editorTime : 0,

@@ -15,6 +15,19 @@ let UISave = {
 };
 
 let UIEditor = {
-    editorText : [0, 0],
-    backbutton : [1240, 0, 40, 40],
+    upperBar : [0, 0, 1280, 40],
+    buttonTwitch : [960, 0, 240, 40],
+    textTwitch : [968, 4],
+    buttonClose : [1240, 0, 40, 40],
+
+    statusBar : [0, 40, 1280, 40],
+    turnText : [8, 44],
+
+    field : [480, 80, 800, 600],
+
+    twitchSettingsWindow : [320, 160, 640, 400],
+    twitchClose : [920, 160, 40, 40],
+    twitchFlagIcon : [],
+    twitchClockIcon : [],
+
 };

@@ -5,7 +5,7 @@ function loopSave() {
 function displaySave() {
     drawSceneInit();
 
-    strokeRectArray(UISave.backButton);
+    drawImageArray(img.buttonBack, UISave.backButton);
 }
 
 function mouseUpSave(x, y, button) {

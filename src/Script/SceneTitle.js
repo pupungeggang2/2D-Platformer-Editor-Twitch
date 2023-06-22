@@ -26,6 +26,7 @@ function mouseUpTitle(x, y, button) {
                 } else if (pointInsideRectArray(x, y, UITitle.editorRect)) {
                     scene = 'Editor';
                     state = '';
+                    editorInit();
                 } else if (pointInsideRectArray(x, y, UITitle.eraseRect)) {
                     eraseSaveFile();
                 }

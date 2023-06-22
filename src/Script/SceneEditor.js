@@ -5,17 +5,29 @@ function loopEditor() {
 function displayEditor() {
     drawSceneInit();
 
-    fillTextArray('Editor', UIEditor.editorText);
-    strokeRectArray(UIEditor.backbutton);
+    drawEditorUpperBar();
+    drawEditorStatusBar();
+    drawEditorField();
+
+    if (state === 'TwitchSetting') {
+        drawEditorTwitchSettingsWindow();
+    }
 }
 
 function mouseUpEditor(x, y, button) {
     if (button === 0) {
         if (pause === false && menu === false) {
             if (state === '') {
-                if (pointInsideRectArray(x, y, UIEditor.backbutton)) {
+                if (pointInsideRectArray(x, y, UIEditor.buttonClose)) {
                     scene = 'Title';
-                    staet = '';
+                    state = '';
+                } else if (pointInsideRectArray(x, y, UIEditor.buttonTwitch)) {
+                    state = 'TwitchSetting';
+                    resetTwitch();
+                }
+            } else if (state === 'TwitchSetting') {
+                if (pointInsideRectArray(x, y, UIEditor.twitchClose)) {
+                    state = '';
                 }
             }
         }
