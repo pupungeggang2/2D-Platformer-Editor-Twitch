@@ -112,6 +112,7 @@ function mouseUp(event) {
 
 function errorHandle() {
     cancelAnimationFrame(gameInstance);
+    client = null;
 }
 
 function rightClick() {

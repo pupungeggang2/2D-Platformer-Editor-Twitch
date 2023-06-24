@@ -11,6 +11,8 @@ let state = '';
 let pause = false;
 let menu = false;
 
+let client;
+
 let editor = {
     camera : [0, 0],
     editHistory : [],
@@ -29,6 +31,7 @@ let twitchSetting = {
 };
 
 let twitchMode = {
+    state : '',
     viewerMode : false,
     broadcasterNick : '',
     joinedList : [],
